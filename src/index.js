@@ -14,4 +14,5 @@ app.use(KoaBody())
 app.use(statics(path.join(__dirname, '../public')))
 app.use(router())
 
+console.log("listen success 3001")
 app.listen(3001)

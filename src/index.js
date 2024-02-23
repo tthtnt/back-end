@@ -8,8 +8,11 @@ import jsonutil from 'koa-json'
 import cors from '@koa/cors'
 import compose from 'koa-compose'
 import koaBody from 'koa-body'
+import compress from 'koa-compress'
 
 const app = new Koa()
+
+const isDevMode = (process.env.NODE_ENV === 'production' ? false : true)
 
 const middleware = compose([
     koaBody(),
@@ -19,6 +22,9 @@ const middleware = compose([
     helmet()
 ])
 
+if (!isDevMode) {
+    app.use(compress())
+}
 /**
  * 使用koa-compose 集成中间件
  */

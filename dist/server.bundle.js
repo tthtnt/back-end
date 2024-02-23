@@ -43,9 +43,10 @@ eval("function getUserInfo(ctx) {\n  const {\n    body,\n    header\n  } = ctx.r
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const Koa = __webpack_require__(/*! koa */ \"koa\");\nconst KoaBody = __webpack_require__(/*! koa-body */ \"koa-body\");\nconst path = __webpack_require__(/*! path */ \"path\");\nconst app = new Koa();\nconst helmet = __webpack_require__(/*! koa-helmet */ \"koa-helmet\");\nconst statics = __webpack_require__(/*! koa-static */ \"koa-static\");\nconst router = __webpack_require__(/*! ./routes/routes */ \"./src/routes/routes.js\");\n// 处理header\napp.use(helmet());\n// 处理body\napp.use(KoaBody());\n// 处理静态文件\napp.use(statics(path.join(__dirname, '../public')));\napp.use(router());\nconsole.log(\"listen success 3001\");\napp.listen(3001);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9iYWNrLWVuZC8uL3NyYy9pbmRleC5qcz9kOWJlIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IEtvYSA9IHJlcXVpcmUoJ2tvYScpO1xuY29uc3QgS29hQm9keSA9IHJlcXVpcmUoJ2tvYS1ib2R5Jyk7XG5jb25zdCBwYXRoID0gcmVxdWlyZSgncGF0aCcpO1xuY29uc3QgYXBwID0gbmV3IEtvYSgpO1xuY29uc3QgaGVsbWV0ID0gcmVxdWlyZSgna29hLWhlbG1ldCcpO1xuY29uc3Qgc3RhdGljcyA9IHJlcXVpcmUoJ2tvYS1zdGF0aWMnKTtcbmNvbnN0IHJvdXRlciA9IHJlcXVpcmUoJy4vcm91dGVzL3JvdXRlcycpO1xuLy8g5aSE55CGaGVhZGVyXG5hcHAudXNlKGhlbG1ldCgpKTtcbi8vIOWkhOeQhmJvZHlcbmFwcC51c2UoS29hQm9keSgpKTtcbi8vIOWkhOeQhumdmeaAgeaWh+S7tlxuYXBwLnVzZShzdGF0aWNzKHBhdGguam9pbihfX2Rpcm5hbWUsICcuLi9wdWJsaWMnKSkpO1xuYXBwLnVzZShyb3V0ZXIoKSk7XG5jb25zb2xlLmxvZyhcImxpc3RlbiBzdWNjZXNzIDMwMDFcIik7XG5hcHAubGlzdGVuKDMwMDEpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var koa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! koa */ \"koa\");\n/* harmony import */ var koa__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(koa__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var koa_body__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! koa-body */ \"koa-body\");\n/* harmony import */ var koa_body__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(koa_body__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! path */ \"path\");\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var koa_helmet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! koa-helmet */ \"koa-helmet\");\n/* harmony import */ var koa_helmet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(koa_helmet__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var koa_static__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! koa-static */ \"koa-static\");\n/* harmony import */ var koa_static__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(koa_static__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _routes_routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/routes */ \"./src/routes/routes.js\");\n/* harmony import */ var _routes_routes__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_routes_routes__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nconst app = new (koa__WEBPACK_IMPORTED_MODULE_0___default())();\n// 处理header\napp.use(koa_helmet__WEBPACK_IMPORTED_MODULE_3___default()());\n// 处理body\napp.use(koa_body__WEBPACK_IMPORTED_MODULE_1___default()());\n// 处理静态文件\napp.use(koa_static__WEBPACK_IMPORTED_MODULE_4___default()(path__WEBPACK_IMPORTED_MODULE_2___default().join(__dirname, '../public')));\napp.use(_routes_routes__WEBPACK_IMPORTED_MODULE_5___default()());\nconsole.log(\"listen success 3001\");\napp.listen(3001);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYmFjay1lbmQvLi9zcmMvaW5kZXguanM/ZDliZSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgS29hIGZyb20gJ2tvYSc7XG5pbXBvcnQgS29hQm9keSBmcm9tICdrb2EtYm9keSc7XG5pbXBvcnQgcGF0aCBmcm9tICdwYXRoJztcbmltcG9ydCBoZWxtZXQgZnJvbSAna29hLWhlbG1ldCc7XG5pbXBvcnQgc3RhdGljcyBmcm9tICdrb2Etc3RhdGljJztcbmltcG9ydCByb3V0ZXIgZnJvbSAnLi9yb3V0ZXMvcm91dGVzJztcbmNvbnN0IGFwcCA9IG5ldyBLb2EoKTtcbi8vIOWkhOeQhmhlYWRlclxuYXBwLnVzZShoZWxtZXQoKSk7XG4vLyDlpITnkIZib2R5XG5hcHAudXNlKEtvYUJvZHkoKSk7XG4vLyDlpITnkIbpnZnmgIHmlofku7ZcbmFwcC51c2Uoc3RhdGljcyhwYXRoLmpvaW4oX19kaXJuYW1lLCAnLi4vcHVibGljJykpKTtcbmFwcC51c2Uocm91dGVyKCkpO1xuY29uc29sZS5sb2coXCJsaXN0ZW4gc3VjY2VzcyAzMDAxXCIpO1xuYXBwLmxpc3RlbigzMDAxKTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ }),
 
@@ -191,6 +192,47 @@ module.exports = require("path");
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	

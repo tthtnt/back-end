@@ -1,11 +1,11 @@
-const Koa = require('koa')
-const KoaBody = require('koa-body')
-const path = require('path')
-const app = new Koa()
-const helmet = require('koa-helmet')
-const statics = require('koa-static')
+import Koa from 'koa'
+import KoaBody from 'koa-body'
+import path from 'path'
+import helmet from 'koa-helmet'
+import statics from 'koa-static'
+import router from './routes/routes'
 
-const router = require('./routes/routes')
+const app = new Koa()
 // 处理header
 app.use(helmet())
 // 处理body

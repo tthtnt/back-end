@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node src/index.js",
-    "webpack:debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress"
+    "webpack:debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress",
+    "build": "cross-env NODE_ENV=prod webpack --config config/webpack.config.prod.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/app/js",
+    "clean": "rimraf dist"
   },
   "keywords": [],
   "author": "",
@@ -30,8 +33,11 @@
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "nodemon": "^1.19.4",
+    "rimraf": "^5.0.5",
+    "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0",
     "webpack-node-externals": "^3.0.0"
   }
 }
